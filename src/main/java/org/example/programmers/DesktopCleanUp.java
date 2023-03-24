@@ -4,7 +4,10 @@ import java.util.Arrays;
 
 public class DesktopCleanUp {
   public int[] solution(String[] wallpaper) {
-    int lux = Integer.MAX_VALUE, luy = Integer.MAX_VALUE, rdx = 0, rdy = 0;
+    int lux = Integer.MAX_VALUE;
+    int luy = Integer.MAX_VALUE;
+    int rdx = 0;
+    int rdy = 0;
 
     for (int i = 0; i < wallpaper.length; i++) {
       for (int j = 0; j < wallpaper[i].length(); j++) {

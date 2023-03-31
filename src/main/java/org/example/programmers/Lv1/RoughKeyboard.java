@@ -1,6 +1,5 @@
 package org.example.programmers.Lv1;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -46,14 +45,5 @@ public class RoughKeyboard {
     }
 
     return answer;
-  }
-
-  public static void main(String[] args) {
-    RoughKeyboard roughKeyboard = new RoughKeyboard();
-    String[] keymap = {"AGB", "BSSS"};
-    String[] targets = {"AGZ", "BSSS"};
-    int[] solution = roughKeyboard.solution(keymap, targets);
-
-    System.out.println(Arrays.toString(solution));
   }
 }

@@ -17,11 +17,4 @@ public class Phonekemon {
 
     return expectResult;
   }
-
-  public static void main(String[] args) {
-    Phonekemon phonekemon = new Phonekemon();
-    int[] nums = {3,3,3,2,2,2};
-    int answer = phonekemon.solution(nums);
-    System.out.println(answer);
-  }
 }

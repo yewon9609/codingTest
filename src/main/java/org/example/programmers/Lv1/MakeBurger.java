@@ -5,7 +5,6 @@ import java.util.Stack;
 public class MakeBurger {
   public int solution(int[] ingredient) {
     int answer = 0;
-
     Stack<Integer> stack = new Stack<>();
     for (int i : ingredient) {
       stack.push(i);
@@ -31,13 +30,5 @@ public class MakeBurger {
     stack.pop();
     stack.pop();
     stack.pop();
-  }
-
-
-  public static void main(String[] args) {
-    MakeBurger makeBurger = new MakeBurger();
-    int[] ingredient = {2, 1, 1, 2, 3, 1, 2, 3, 1};
-    int answer = makeBurger.solution(ingredient);
-    System.out.println(answer);
   }
 }

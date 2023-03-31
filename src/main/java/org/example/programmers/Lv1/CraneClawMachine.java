@@ -14,7 +14,6 @@ public class CraneClawMachine {
           result.add(board[j][moves[i]-1]);
           board[j][moves[i]-1]=0;
 
-
           if(result.size()>1) {
             int a=result.size();
             if(Objects.equals(result.get(a - 1), result.get(a - 2))) {

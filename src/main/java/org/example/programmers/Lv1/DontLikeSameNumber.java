@@ -13,7 +13,6 @@ public class DontLikeSameNumber {
         stack.add(arr[i]);
       }
     }
-
     return stack.stream().collect(Collectors.toList());
   }
 }

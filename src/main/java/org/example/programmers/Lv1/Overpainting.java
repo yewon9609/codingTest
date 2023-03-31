@@ -1,4 +1,4 @@
-package org.example.programmers;
+package org.example.programmers.Lv1;
 
 public class Overpainting {
   public int solution(int n, int m, int[] section) {

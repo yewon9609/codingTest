@@ -1,4 +1,4 @@
-package org.example.programmers;
+package org.example.programmers.Lv1;
 
 import java.util.ArrayList;
 import java.util.Objects;

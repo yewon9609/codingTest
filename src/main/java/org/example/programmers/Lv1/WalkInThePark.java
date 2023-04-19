@@ -1,7 +1,5 @@
 package org.example.programmers.Lv1;
 
-import java.util.Arrays;
-
 public class WalkInThePark {
   public int[] solution(String[] park, String[] routes) {
     int startX = 0, startY = 0;

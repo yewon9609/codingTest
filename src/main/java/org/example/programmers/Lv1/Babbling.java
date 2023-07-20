@@ -6,24 +6,24 @@ public class Babbling {
     int answer = 0;
     String aya = "aya", ye = "ye", woo = "woo", ma = "ma";
 
-    for (int i = 0; i < babbling.length; i++) {
+    for (String babb : babbling) {
 
-      if(babbling[i].contains(aya.concat(aya))
-        || babbling[i].contains(ye.concat(ye))
-        || babbling[i].contains(woo.concat(woo))
-        || babbling[i].contains(ma.concat(ma))) {
+      if (babb.contains(aya + aya) || babb.contains(ye + ye) || babb.contains(woo + woo)
+          || babb.contains(ma + ma)) {
+
         continue;
       }
 
-      String replaceBabbling = babbling[i].replace(aya, "")
-          .replace(ye, "")
-          .replace(woo, "")
-          .replace(ma, "");
+        String replaceBabbling = babb.replace(aya, " ")
+            .replace(ye, " ")
+            .replace(woo, " ")
+            .replace(ma, " ")
+            .replace(" ", "");
 
-      if (replaceBabbling.isEmpty()) {
+      System.out.println(replaceBabbling + "dd");
+      if (replaceBabbling.equals("")) {
         answer++;
       }
-
     }
 
     return answer;
@@ -31,7 +31,7 @@ public class Babbling {
 
   public static void main(String[] args) {
     Babbling b = new Babbling();
-    String[] babbling = {"ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"};
+    String[] babbling = {"ayaye", "uuu", "yeye", "yemawoo", "ayaayaa", "yayae"};
     int solution = b.solution(babbling);
     System.out.println(solution);
   }
